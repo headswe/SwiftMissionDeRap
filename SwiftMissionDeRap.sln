@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftMissionDeRap", "SwiftMissionDeRap\SwiftMissionDeRap.csproj", "{5A7AA77B-5D43-4423-B702-EC09520AAFA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftMissionDeRapConsole", "SwiftMissionDeRapConsole\SwiftMissionDeRapConsole.csproj", "{408B8261-E940-4115-9B7D-48BA1B5A33C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A7AA77B-5D43-4423-B702-EC09520AAFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7AA77B-5D43-4423-B702-EC09520AAFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7AA77B-5D43-4423-B702-EC09520AAFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7AA77B-5D43-4423-B702-EC09520AAFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408B8261-E940-4115-9B7D-48BA1B5A33C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408B8261-E940-4115-9B7D-48BA1B5A33C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408B8261-E940-4115-9B7D-48BA1B5A33C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408B8261-E940-4115-9B7D-48BA1B5A33C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE2FEB8D-FED9-4270-8E59-0D61BBE0B8ED}
+	EndGlobalSection
+EndGlobal
