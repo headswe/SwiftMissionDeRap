@@ -3,13 +3,13 @@ using System.Text;
 
 namespace SwiftMissionDeRap
 {
-    public class RapMission : RapClass
+    public class RapifiedMissionFile : RapifiedSqmClass
     {
         string Tag;
         ulong Always0;
         ulong Always8;
         ulong OffsetToEnums;
-        public RapMission(FileInfo file)
+        public RapifiedMissionFile(FileInfo file)
         {
             using(stream = file.OpenRead())
             {

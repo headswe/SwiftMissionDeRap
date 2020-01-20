@@ -5,19 +5,16 @@ using System.Text;
 
 namespace SwiftMissionDeRap
 {
-    public class RapClass
+    public class RapifiedSqmClass : SqmClass
     {
-        public string Name { get; set; }
         public long pos { get; set; }
-        public Dictionary<string, dynamic> Attributes { get; set; } = new Dictionary<string, dynamic>();
-        public Dictionary<string, RapClass> Children { get; set; } = new Dictionary<string, RapClass>();
         internal FileStream stream;
-        private RapClass(string name, long p, FileStream s) {
+        private RapifiedSqmClass(string name, long p, FileStream s) {
             Name = name;
             pos = p;
             stream = s;
         }
-        public RapClass()
+        public RapifiedSqmClass()
         {
 
         }
@@ -65,7 +62,7 @@ namespace SwiftMissionDeRap
                             var name = ReadString();
                             //  var parent = ReadString();
                             var offset = ReadInt32();
-                            Children.Add(name, new RapClass(name, offset, stream));
+                            Children.Add(name, new RapifiedSqmClass(name, offset, stream));
                             break;
                         }
 
@@ -100,7 +97,7 @@ namespace SwiftMissionDeRap
                 }
             }
             foreach(var child in Children) {
-                child.Value.Read();
+                (child.Value as RapifiedSqmClass).Read();
             }
         }
 

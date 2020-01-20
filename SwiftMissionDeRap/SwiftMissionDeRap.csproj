@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5A7AA77B-5D43-4423-B702-EC09520AAFA5}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ConsoleApp3</RootNamespace>
+    <RootNamespace>SwiftMissionDeRap</RootNamespace>
     <AssemblyName>ConsoleApp3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -47,10 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayTypes.cs" />
-    <Compile Include="RapMission.cs" />
+    <Compile Include="MissionFile.cs" />
+    <Compile Include="RapifiedMissionFile.cs" />
     <Compile Include="PacketTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RapClass.cs" />
+    <Compile Include="RapifiedSqmClass.cs" />
+    <Compile Include="SqmClass.cs" />
+    <Compile Include="TextClass.cs" />
     <Compile Include="VariableTypes.cs" />
   </ItemGroup>
   <ItemGroup>

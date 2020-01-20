@@ -13,9 +13,13 @@ namespace SwiftMissionDeRapConsole
     {
         static void Main(string[] args)
         {
-            RapMission file = new RapMission(new FileInfo(args[0]));
-            var str = JsonConvert.SerializeObject(file);
+            MissionFile sfile = new MissionFile(new FileInfo("vmission.sqm"));
+           RapifiedMissionFile mfile = new RapifiedMissionFile(new FileInfo(args[0]));
+            var str = JsonConvert.SerializeObject(sfile);
             File.WriteAllText("mission.json", str);
+            str = JsonConvert.SerializeObject(mfile);
+            File.WriteAllText("mission_bin.json", str);
+            //  
         }
     }
 }
